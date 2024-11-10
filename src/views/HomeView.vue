@@ -7,7 +7,6 @@
       <v-divider></v-divider>
       <v-card-text class="text-center">
         <p class="text-h6" style="font-weight: bold;">Your Balance: <span style="color: #2E8B57;">{{ loggedInAccount?.balance || 0 }}</span></p>
-        <p class="mt-4" style="font-style: italic; color: #6c757d;">"Make your goal more than money. Make it about helping people and creating a better future." - Maxime Lagacé</p>
       </v-card-text>
     </v-card>
   </v-container>

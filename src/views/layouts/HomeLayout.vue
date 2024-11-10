@@ -4,7 +4,6 @@
       <v-navigation-drawer v-model="drawer">
         <!-- sidebar -->
         <v-sheet class="pa-4" color="#2E8B57">
-          "Don't just make money, make a difference." - Grant Cardone
         </v-sheet>
 
         <v-divider></v-divider>
