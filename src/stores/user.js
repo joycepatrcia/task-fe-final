@@ -60,34 +60,10 @@ export const useUserStore = defineStore('user', () => {
     }
   };
   
-
-
-  // const login = async (credentials) => {
-  //   // call API and await
-  //   const response = await api.post('/auth/login', credentials)
-
-  //   // if success, store token, otherwise throw err
-  //   storeToken(response.data.token)
-
-  //   // call API account/my
-  //   const storeToken = localStorage.getItem('token')
-
-  //   const responseMy = await api.get('/account/my', {
-  //     headers: {
-  //       Authorization: Bearer ${token.value},
-  //     },
-  //   })
-
-  //   // if success, store user, otherwise throw err
-  //   storeUser(responseMy.data.data)
-  // }
-
   const logout = () => {
-    // Remove token and user from localStorage
     localStorage.removeItem('token')
     localStorage.removeItem('user')
 
-    // Remove from store
     token.value = null
     storedUser.value = null
   }

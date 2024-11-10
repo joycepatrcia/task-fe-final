@@ -9,10 +9,6 @@
         <p class="text-h6" style="font-weight: bold;">Your Balance: <span style="color: #2E8B57;">{{ loggedInAccount?.balance || 0 }}</span></p>
         <p class="mt-4" style="font-style: italic; color: #6c757d;">"Make your goal more than money. Make it about helping people and creating a better future." - Maxime Lagacé</p>
       </v-card-text>
-      <v-divider></v-divider>
-      <v-card-actions class="justify-center">
-        <v-btn color="#2E8B57" @click="redirectToDompetku" block>View My Wallet Tracker</v-btn>
-      </v-card-actions>
     </v-card>
   </v-container>
 </template>
@@ -53,10 +49,6 @@ async function fetchLoggedInAccount() {
 onMounted(async () => {
   await fetchLoggedInAccount()
 })
-
-function redirectToDompetku() {
-  router.push('/dompetku')
-}
 </script>
 
 <style scoped>
